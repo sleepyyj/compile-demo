@@ -1,0 +1,13 @@
+logs
+
+*.log
+
+node_modules
+
+dist
+
+uploads
+
+.vscode
+
+classes

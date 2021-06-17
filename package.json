@@ -1,0 +1,53 @@
+{
+  "name": "compile-demo",
+  "version": "2.1.0",
+  "description": "compile demo.",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/sleepyyj/compile-demo.git"
+  },
+  "author": "RichardYang",
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "backend"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "build:watch": "rm -rf dist && tsc -w",
+    "start": "node dist/index.js",
+    "start:dev": "tsc-watch --onSuccess 'node --inspect=0.0.0.0:5858 dist/src/index.js'"
+  },
+  "dependencies": {
+    "koa": "^2.8.1",
+    "koa-helmet": "^5.1.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "log4js": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/async": "^3.0.1",
+    "@types/koa": "^2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-helmet": "^3.1.2",
+    "@types/koa-multer": "^1.0.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/node": "^12.7.5",
+    "@types/pino": "^5.8.10",
+    "@types/sinon": "^7.0.13",
+    "@types/supertest": "^2.0.8",
+    "husky": "^3.0.5",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2",
+    "sinon": "^7.4.2",
+    "supertest": "^4.0.2",
+    "tsc-watch": "^3.0.1",
+    "tslint": "^5.20.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.6.3"
+  },
+  "engines": {
+    "node": ">=12.10.0"
+  }
+}
